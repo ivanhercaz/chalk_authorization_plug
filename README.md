@@ -13,7 +13,8 @@ adding `chalk_authorization_plug` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:chalk_authorization_plug, "~> 0.1.0"}
+    {:chalk_authorization_plug, "~> 0.1.1"},
+    …
   ]
 end
 ```
