@@ -4,7 +4,7 @@ defmodule ChalkAuthorizationPlug.MixProject do
   def project do
     [
       app: :chalk_authorization_plug,
-      version: "0.1.1",
+      version: "0.1.2",
       description: "Chalk authorization system plug for Phoenix Framework",
       elixir: "~> 1.11",
       start_permanent: Mix.env() == :prod,
