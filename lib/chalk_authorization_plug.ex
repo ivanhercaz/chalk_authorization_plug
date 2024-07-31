@@ -8,6 +8,11 @@ defmodule ChalkAuthorization.Plug do
     |> redirect(to: opts[:bounce_to] || "/")
     |> halt()
 
+  @doc """
+  Checks if the user is authorized.
+
+  Returns `conn` or halt the plug pipeline.
+  """
   def require_authorization(conn, opts \\ [])
 
   def require_authorization(%{assigns: %{current_user: %{superuser: true}}} = conn, _opts),
