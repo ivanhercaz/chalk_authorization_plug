@@ -1,10 +1,12 @@
 defmodule ChalkAuthorizationPlug.MixProject do
   use Mix.Project
 
+  @version "0.1.2"
+
   def project do
     [
       app: :chalk_authorization_plug,
-      version: "0.1.2",
+      version: @version,
       description: "Chalk authorization system plug for Phoenix Framework",
       elixir: "~> 1.11",
       elixirc_paths: elixirc_paths(Mix.env()),
@@ -13,7 +15,9 @@ defmodule ChalkAuthorizationPlug.MixProject do
       deps: deps(),
       docs: [
         main: "readme",
-        extras: ["README.md"]
+        extras: ["README.md"],
+        source_ref: "v#{@version}",
+        source_url: "https://github.com/quarkex/chalk_authorization_plug"
       ]
     ]
   end
