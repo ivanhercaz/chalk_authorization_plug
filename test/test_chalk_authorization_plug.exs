@@ -36,6 +36,8 @@ defmodule ChalkAuthorizationPlugTest do
     result = ChalkAuthorization.Plug.require_authorization(conn)
 
     assert result.halted == true
-    assert result.private.phoenix_flash["error"] == "You don't have permission to access that page."
+
+    assert result.private.phoenix_flash["error"] ==
+             "You don't have permission to access that page."
   end
 end
