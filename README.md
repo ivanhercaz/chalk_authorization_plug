@@ -1,7 +1,7 @@
 # ChalkAuthorizationPlug
 
 This is a plug meant to be used with
-[ChalkAuthorization](https://github.com/Quarkex/chalk_authorization) to hadle
+`ChalkAuthorization` to handle
 routing access permissions.
 
 ## Installation
@@ -18,3 +18,25 @@ def deps do
   ]
 end
 ```
+
+If you haven't `ChalkAuthorization` already installed, you must add it too in your
+list of dependencies:
+
+```elixir
+def deps do
+  [
+    {:chalk_authorization, "~> 0.1.1"},
+    {:chalk_authorization_plug, "~> 0.1.1"},
+    …
+  ]
+end
+```
+
+## Usage
+
+`ChalkAuthorization` aims to ease the authorization requirements.
+
+- If you already have `ChalkAuthorization` implemented in your application,
+you can directly read `ChalkAuthorization.Plug` documentation.
+- If you haven't `ChalkAuthorization` implemented, first, checks its
+documentation.
